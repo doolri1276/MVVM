@@ -13,7 +13,33 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.ButtonActivity">
+        tools:context=".view.ButtonActivity"
+        android:padding="16px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.helloText}"
+            tools:text="Hello World!"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->viewModel.showCurrentTime()}"
+            android:text="현재 시간1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 시간 2"
+            android:onClick="@{viewModel.currentTime2ClickListener}"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:onClick="@{viewModel.resetText}"/>
+
 
     </LinearLayout>
 </layout>
