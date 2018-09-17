@@ -29,8 +29,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="go to edit rating vali activity"
-                android:onClick="@{()->viewModel.goToEditRatingValiActivity()}"/>
+                android:text="go to input activity"
+                android:onClick="@{()->viewModel.goToInputActivity()}"/>
 
             <Button
                 android:layout_width="match_parent"

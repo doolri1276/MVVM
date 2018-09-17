@@ -3,13 +3,12 @@ package com.snownaul.mvvm.tools;
 import android.content.Intent;
 
 import com.snownaul.mvvm.view.ButtonActivity;
-import com.snownaul.mvvm.view.EditRatingValiActivity;
+import com.snownaul.mvvm.view.InputActivity;
 import com.snownaul.mvvm.view.FragmentActivity;
 import com.snownaul.mvvm.view.ListActivity;
 import com.snownaul.mvvm.view.RecyclerActivity;
 
 import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class MoveActivityTool {
 
@@ -19,8 +18,8 @@ public class MoveActivityTool {
         ContextCompat.startActivity(App.getInstance(), intent, null);
     }
 
-    public static void goToEditRatingValiActivity(){
-        Intent intent = new Intent(App.getInstance(), EditRatingValiActivity.class);
+    public static void goToInputActivity(){
+        Intent intent = new Intent(App.getInstance(), InputActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         ContextCompat.startActivity(App.getInstance(), intent, null);
     }

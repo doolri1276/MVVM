@@ -28,8 +28,8 @@ public class MainViewModel implements BaseViewModel {
         MoveActivityTool.goToButtonActivity();
     }
 
-    public void goToEditRatingValiActivity(){
-        MoveActivityTool.goToEditRatingValiActivity();
+    public void goToInputActivity(){
+        MoveActivityTool.goToInputActivity();
     }
 
     public void goToListActivity(){

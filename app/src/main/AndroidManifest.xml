@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.ButtonActivity" />
-        <activity android:name=".view.EditRatingValiActivity" />
+        <activity android:name=".view.InputActivity" />
         <activity android:name=".view.ListActivity" />
         <activity android:name=".view.RecyclerActivity" />
         <activity android:name=".view.FragmentActivity"></activity>
