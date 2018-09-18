@@ -43,4 +43,8 @@ public class MainViewModel implements BaseViewModel {
     public void goToFragmentActivity(){
         MoveActivityTool.goToFragmentActivity();
     }
+
+    public void goToImageActivity(){
+        MoveActivityTool.goToFragmentActivity();
+    }
 }

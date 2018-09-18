@@ -21,7 +21,8 @@
         <activity android:name=".view.InputActivity" />
         <activity android:name=".view.ListActivity" />
         <activity android:name=".view.RecyclerActivity" />
-        <activity android:name=".view.FragmentActivity"></activity>
+        <activity android:name=".view.FragmentActivity" />
+        <activity android:name=".view.ImageActivity"></activity>
     </application>
 
 </manifest>

@@ -50,6 +50,12 @@
                 android:text="go to Fragment activity"
                 android:onClick="@{()->viewModel.goToFragmentActivity()}"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="go to Image activity"
+                android:onClick="@{()->viewModel.goToImageActivity()}"/>
+
         </LinearLayout>
 
     </ScrollView>

@@ -29,6 +29,7 @@ public class RecyclerActivity extends AppCompatActivity {
         binding.setViewModel(new UsersViewModel());
         binding.setDecorator(dividerLineDecoratorViewModel);
         dividerLineDecoratorViewModel.onCreate();
+        getSupportActionBar().setTitle("Recycler Activity");
     }
 
     @BindingAdapter("app:items")
