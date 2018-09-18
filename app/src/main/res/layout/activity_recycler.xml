@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
     <data>
-        
+        <variable
+            name="viewModel"
+            type="com.snownaul.mvvm.view_model.UsersViewModel"/>
         
         <variable
             name="decorator"
@@ -20,12 +22,17 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add"/>
+            android:text="add"
+            android:onClick="@{()->viewModel.newUser()}"/>
         
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="vertical"/>
+            android:scrollbars="vertical"
+            app:items="@{viewModel.users}"
+            app:decorator="@{decorator.decorator}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
 
 
     </LinearLayout>
